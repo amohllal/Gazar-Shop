@@ -1,6 +1,3 @@
-# Gazar-Shop
-an e-commerce that allows the consumer to see the offered products and also allows ordering with these products 
-and allows the user to display his own products that he wants to sell.
 
 # About Gazar-Shop
 - an e-commerce that allows the consumer to see the offered products and also allows ordering with these products 
