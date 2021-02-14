@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".presentation.ui.HomeFragment">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/electronics"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:background="@drawable/categories_btn"
+                android:fontFamily="sans-serif"
+                android:text="electronics"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/jewelery"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:background="@drawable/categories_btn"
+                android:fontFamily="sans-serif"
+                android:text="jewelery"
+                android:textAllCaps="false" />
+
+
+            <Button
+                android:id="@+id/men_clothing"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:background="@drawable/categories_btn"
+                android:fontFamily="sans-serif"
+                android:text="men clothing"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/women_clothing"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:background="@drawable/categories_btn"
+                android:fontFamily="sans-serif"
+                android:text="women clothing"
+                android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:outlineSpotShadowColor="@color/purple_700"
+        android:outlineAmbientShadowColor="@color/purple_700"
+        >
+        <GridView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:columnWidth="170dp"
+            android:horizontalSpacing="15dp"
+            android:numColumns="2"
+            android:verticalSpacing="15dp"/>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

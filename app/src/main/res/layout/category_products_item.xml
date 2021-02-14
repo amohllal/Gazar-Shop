@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:outlineAmbientShadowColor="@color/purple_700"
+    android:outlineSpotShadowColor="@color/purple_700"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/product_avatar"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:src="@drawable/jewelery" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/category_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:fontFamily="sans-serif"
+                android:padding="8dp"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/category_product_desc"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:fontFamily="sans-serif"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:padding="6dp"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/category_product_price"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:fontFamily="sans-serif"
+                android:padding="8dp"
+                android:text="price"
+                android:textColor="@color/purple_700"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

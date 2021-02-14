@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "198279177003",
+    "project_id": "gazar-shop",
+    "storage_bucket": "gazar-shop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198279177003:android:0bbffbc85b20c2d0c01b6e",
+        "android_client_info": {
+          "package_name": "com.example.gazarshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198279177003-mv0e3j12ab15cc2jnpq0gtng0pvnav1j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5uPj0DfG4Vb6sI2TjiX7YbsEGFXx6BOw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198279177003-mv0e3j12ab15cc2jnpq0gtng0pvnav1j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

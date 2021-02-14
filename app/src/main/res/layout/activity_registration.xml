@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        tools:context=".presentation.ui.RegistrationActivity"
+        android:background="@color/white"
+        android:id="@+id/root_container">
+
+        <ImageView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/container_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <EditText
+                android:id="@+id/firstName_View"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                style="@style/myEditTextStyle"
+                android:ems="10"
+                android:hint="First name"
+                android:inputType="textPersonName"
+                android:drawableLeft="@drawable/ic_baseline_person_24" />
+
+            <EditText
+                android:id="@+id/lastName_View"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                style="@style/myEditTextStyle"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:hint="Last name"
+                android:layout_marginLeft="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/container_name"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/container_name"
+            app:layout_constraintTop_toBottomOf="@+id/container_name">
+
+            <EditText
+                android:id="@+id/userName_View"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                style="@style/myEditTextStyle"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:hint="Username" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="210dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                style="@style/myEditTextStyle" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/email_View"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            style="@style/myEditTextStyle"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="12dp"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            app:layout_constraintEnd_toEndOf="@+id/container_mail"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/container_mail"
+            app:layout_constraintTop_toBottomOf="@+id/container_mail" />
+
+        <EditText
+            android:id="@+id/password_View"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            style="@style/myEditTextStyle"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            app:layout_constraintEnd_toEndOf="@+id/email_View"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/email_View"
+            app:layout_constraintTop_toBottomOf="@+id/email_View" />
+
+        <EditText
+            android:id="@+id/phone_View"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            style="@style/myEditTextStyle"
+            android:ems="10"
+            android:hint="Mobile number"
+            android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="@+id/password_View"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/password_View"
+            app:layout_constraintTop_toBottomOf="@+id/password_View" />
+
+        <EditText
+            android:id="@+id/street"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            style="@style/myEditTextStyle"
+            android:hint="Street"
+            android:drawableLeft="@drawable/ic_baseline_streetview_24"
+            app:layout_constraintEnd_toEndOf="@+id/phone_View"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="@+id/phone_View"
+            app:layout_constraintTop_toBottomOf="@+id/phone_View" />
+
+        <LinearLayout
+            android:id="@+id/container_zipCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/email_View"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/email_View"
+            app:layout_constraintTop_toBottomOf="@+id/street">
+
+            <EditText
+                android:id="@+id/num_of_build"
+                style="@style/myEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Building"
+                android:inputType="number"
+                android:drawableLeft="@drawable/ic_baseline_location_city_24" />
+
+            <EditText
+                android:id="@+id/zip_code"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                style="@style/myEditTextStyle"
+                android:drawableLeft="@drawable/ic_baseline_contact_page_24"
+                android:hint="Zip-Code"
+                android:layout_marginLeft="8dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_button"
+            android:text="Sign up"
+            app:layout_constraintEnd_toEndOf="@+id/container_zipCode"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/container_zipCode"
+            app:layout_constraintTop_toBottomOf="@+id/container_zipCode" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

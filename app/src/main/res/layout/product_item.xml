@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="15dp"
+    android:outlineSpotShadowColor="@color/purple_700"
+    android:outlineAmbientShadowColor="@color/purple_700">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/product_img"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@drawable/jewelery"
+        android:padding="14dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="jewelery"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
